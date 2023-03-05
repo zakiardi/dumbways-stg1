@@ -73,7 +73,7 @@ function renderProject() {
             </div>
             <div class="blog-content">
                 <h1>
-                    <a href="blog-detail.html" target="_blank"
+                    <a href="isiblog.html" target="_blank"
                     >${dataProject[index].nama}</a
                     >
                 </h1>

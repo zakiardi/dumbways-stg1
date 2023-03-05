@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Home</title>
@@ -23,24 +23,38 @@
         <div class="nav-right">
           <a href="FormNavbar.html">Contact Me</a>
         </div>
-      </nav>
+        <div id="barsmenu" style="margin-right: 10px;">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+      </nav>  
+      <div class="hamburger-nav" id="hamburger-nav">
+          <a href="index.html" class="hamburger-active">Home</a>
+          <a href="myproject.html">My Project</a>
+          <a href="FormNavbar.html">Contact Me</a>
+      </div>
 
       <div>
         <section>
           <div class="bagian-kiri">
-            <h1>Hello!</h1>
-            <h1>Welcome to My Hut</h1>
-            <p>“Saya seorang siswa bootcamp di PT. DumbWays Indonesia. Saya memiliki pengalaman dalam pengolahan konten di website dan media sosial. Dengan daya kreativitas dan keterampilan yang baik, saya mampu menyusun artikel, iklan, poster, dan pengumuman yang menarik.”</p>
-            <div>
-              <a href="https://wa.me/081211676405" style="border: 1px solid black; border-radius: 15px; padding:5px 25px; font-family:Arial, Helvetica, sans-serif; color: whitesmoke; background-color: black; text-decoration: none; margin-right: 20px">Contact</a>
-              <a href="./assets/CV Muhammad Zaki Ardianto.pdf" style="color:rgb(10, 10, 10); display: inline; text-decoration: none; font-family: arial; font-weight: bold;">Download CV<span><i class="fa-solid fa-download"></i></span></a>
-              <div class="logo-sosmed">
-                <a class="social-media-icon" href="#"><span class="fab fa-facebook"></span></a>
-                <a class="social-media-icon" href="https://twitter.com/zakiardi3/"><span class="fab fa-twitter"></span></a>
-                <a class="social-media-icon" href="https://www.instagram.com/zakiardi/"><span class="fab fa-instagram"></span></a>
-                <a class="social-media-icon" href="#"><span class="fab fa-linkedin"></span></a>
+            <div class="card-left">
+             <h1>Hello!</h1>
+              <h1>Welcome to My Hut</h1>
+              <p>“Saya seorang siswa bootcamp di PT. DumbWays Indonesia. Saya memiliki pengalaman dalam pengolahan konten di website dan media sosial. Dengan daya kreativitas dan keterampilan yang baik, saya mampu menyusun artikel, iklan, poster, dan pengumuman yang menarik.”</p>
+              <div>
+                <div class="contact-cv">
+                  <a href="https://wa.me/081211676405" class="contact">Contact</a>
+                  <a href="./assets/CV Muhammad Zaki Ardianto.pdf" class="download">Download CV<span><i class="fa-solid fa-download"></i></span></a>
+                </div>
+                <div class="logo-sosmed">
+                  <a class="social-media-icon" href="#"><span class="fab fa-facebook"></span></a>
+                  <a class="social-media-icon" href="https://twitter.com/zakiardi3/"><span class="fab fa-twitter"></span></a>
+                  <a class="social-media-icon" href="https://www.instagram.com/zakiardi/"><span class="fab fa-instagram"></span></a>
+                  <a class="social-media-icon" href="#"><span class="fab fa-linkedin"></span></a>
+                </div>
               </div>
-            </div>
+            </div>  
           </div>
           <div class="bagian-kanan">
             <div class="card">
@@ -51,5 +65,6 @@
           </div>
         </section>
         </div>
+        <script src="./JS/index.js"></script>
 </body>
 </html>

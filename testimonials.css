@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    height: 10vh;
+    flex: wrap;
+  }
+  
+  
+  body {
+    margin: 0px;
+  }
+  
+  .nav-left {
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .nav-left li {
+    display: inline;
+  }
+  
+  .nav-left ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left ul li a {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+  }
+  
+  .nav-right {
+    font-family: arial;
+    display: flex;
+    flex: 50%;
+    justify-content: end;
+    align-items: center;
+    padding: 30px;
+    font-size: 14px;
+  }
+  
+  .nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: orangered;
+  }
+
+  #barsmenu {
+    display: none;
+  }
+
+  .hamburger-nav {
+    font-size: 23px;
+    display: none;
+  }
+  
+  .hamburger-nav .hamburger-active {
+    background-color: orangered;
+  }
+  
+  .hamburger-nav a {
+    color: white;
+    background-color: #9a9a9a;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+
+  .container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials {
+    width: 25%;
+    margin: 0px 15px 30px 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.review {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+}
+
+.profile {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .testimonials {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .testimonials{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #barsmenu {
+        display: block;
+        padding: 40px 20px;
+    }
+
+    .item {
+        display: none;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hamburger {
+        flex: 1;
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
