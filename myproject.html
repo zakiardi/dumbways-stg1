@@ -11,7 +11,7 @@
   <body>
     <nav>
       <div class="nav-left">
-        <img src="https://dumbways.id/assets/images/brandred.png" alt="Dumbways" width="10%" />
+        <img src="https://dumbways.id/assets/images/brandred.png" alt="Dumbways" width="10%" href="index.html"/>
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -19,11 +19,26 @@
           <li>
             <a href="myproject.html">My Project</a>
           </li>
+          <li class="item">
+            <a href="testimoni.html" class="active">Testimonials</a>
+        </li>
         </ul>
       </div>
       <div class="nav-right">
         <a href="FormNavbar.html">Contact Me</a>
       </div>
+      <div id="barsmenu" style="margin-right: 10px;">
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+    </div>
+  </nav>  
+  <div class="hamburger-nav" id="hamburger-nav">
+    <a href="index.html">Home</a>
+    <a href="myproject.html" class="hamburger-active">My Project</a>
+    <a href="testimoni.html">Testimonials</a>
+    <a href="FormNavbar.html">Contact Me</a>
+</div>
     </nav>
 
     <div class="isi-form">
@@ -131,6 +146,8 @@
       </div>
     </div>
     </div>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/testimonials.js"></script>
     <script src="./JS/myproject.js" ></script>
   </body>
 </html>

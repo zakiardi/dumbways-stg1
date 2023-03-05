@@ -52,6 +52,23 @@ body {
   background-color: orangered;
 }
 
+.hamburger-nav {
+  font-size: 23px;
+  display: none;
+}
+
+.hamburger-nav .hamburger-active {
+  background-color: orangered;
+}
+
+.hamburger-nav a {
+  color: white;
+  background-color: #9a9a9a;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
 
 body {
   margin: 0px;
@@ -265,4 +282,72 @@ a {
 .fa-brands {
   padding: 7px;
   font-size: 25px;
+}
+
+#barsmenu {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .card-left {
+    width: 100%;
+  }
+
+  .bagian-kiri {
+    flex: 100%;
+    display: flex; 
+  }
+
+  .bagian-kanan {
+    margin-left: 0;
+  }
+  
+  section {
+    flex-direction: column;
+    height: auto;
+    justify-content: left;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .logo-sosmed {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  
+  .card {
+    flex-direction: column;  
+  }
+
+  #barsmenu {
+    display: block;
+    padding: 40px 20px;
+  }
+
+  .nav-left {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .card-left {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  section {
+    height: auto;
+    justify-content: left;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .logo-sosmed {
+    padding-top: 10px;
+  }
+
 }

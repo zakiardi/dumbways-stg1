@@ -1,8 +1,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Profile</title>
     <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -15,10 +17,24 @@
                 <li>
                     <a class="myproject" href="FormNavbar.html">My Project</a>
                 </li>
+                <li class="item">
+                    <a href="testimoni.html" class="active">Testimonials</a>
+                </li>
             </ul>
         </div>
         <div class="nav-right">
             <a href="#">Contact Me</a>
+        </div>
+        <div id="barsmenu" style="margin-right: 10px;">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="hamburger-nav" id="hamburger-nav">
+            <a href="index.html" class="hamburger-active">Home</a>
+            <a href="myproject.html">My Project</a>
+            <a href="testimoni.html">Testimonials</a>
+            <a href="FormNavbar.html">Contact Me</a>
         </div>
     </nav>
     <h1>GET IN TOUCH</h1>
@@ -53,6 +69,8 @@
             <button class="button" type="button" onclick="submitData()">Submit</button>
         </div>
     </form>
+    <script src="./JS/index.js"></script>
     <script src="./JS/form.js"></script>
+    <script src="./JS/testimonials.js"></script>
 </body>
 </html>

@@ -48,8 +48,8 @@
   .nav-right a {
     color: white;
     text-decoration: none;
-    padding: 8px 25px;
-    border-radius: 5px;
+    padding: 5px 25px;
+    border-radius: 10px;
     background-color: orangered;
   }
   
